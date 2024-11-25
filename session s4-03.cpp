@@ -1,22 +1,20 @@
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 int main() {
     int number;
 
     
-    cout << "Nhap vao mot so nguyen: ";
-    cin >> number;
+    printf("Nhap vao mot so nguyen: ");
+    scanf("%d", &number);
 
     
     if (number % 3 == 0 && number % 5 == 0) {
-    cout << number << " chia het cho cho 3 và 5." << endl;
+    printf(" chia het cho cho 3 và 5.");
     } else if (number % 3 == 0) {
-    cout << number << " chia het cho 3." << endl;
+    printf(" chia het cho 3.");
     } else if (number % 5 == 0) {
-    cout << number << " chia het cho 5." << endl;
+    printf(" chia het cho 5.");
     } else {
-    cout << number << " khong chia het cho 3 hoac 5." << endl;
+    printf(" khong chia het cho 3 hoac 5.");
     }
 
     return 0;
