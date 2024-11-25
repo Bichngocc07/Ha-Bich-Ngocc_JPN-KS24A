@@ -10,7 +10,7 @@ int main() {
         
         for ( i = 1; i <= 10; i++) {
         	tich = number * i;
-           printf("%d * %d = %d", number, i, tich);
+           printf("%d * %d = %d\n", number, i, tich);
         
     }
 
