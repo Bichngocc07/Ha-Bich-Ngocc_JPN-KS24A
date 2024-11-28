@@ -2,21 +2,19 @@
 
 int main() {
     int n;
-    printf("Nhap vao so phan tu cua mang: ");
+
+    printf("Moi ban nhap vao do dai cua mang: ");
     scanf("%d", &n);
+
     int array[n];
 
-    
-    printf("%d", &array[i]);
-    for (int i = 0; i < n; i++) {
-        
+    for(int i = 0; i < n; i++) {
+        printf("Moi ban nhap vao phan tu array[%d]: ",i);
+        scanf("%d", &array[i]);
     }
 
-    
-    printf("Cac phan tu trong mang la: ");
-    for (int i = 0; i < n; i++) {
-    	printf("%d", &array);
-        
+    for(int i = 0; i < n; i++) {
+        printf("Array[%d] = %d\n",i, array[i]);
     }
     
 
@@ -24,4 +22,3 @@ int main() {
 
     return 0;
 }
-
