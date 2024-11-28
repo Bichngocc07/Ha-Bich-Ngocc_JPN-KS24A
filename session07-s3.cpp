@@ -1,25 +1,17 @@
 #include <stdio.h>
+int main(){
 
-int main() {
-    
-    int array[5] = {17, 07, 7, 01, 1};
-	int chan=0;
-
-    
-    printf("Cac so chan trong mang la: ");
+    int arr[5] = {10, 15, 20, 25, 30};
+    int sochan = 0;
+    printf("Cac so chan ơ trong mang la:\n");
     for (int i = 0; i < 5; i++) {
-        if (array[i] % 2 == 0) {
-            printf("%d", &array[i]);
-            chan =1;
+        if (arr[i] % 2 == 0) {
+            printf("%d ", arr[i]);
+            sochan = 1;
         }
     }
-    
-    if (!chan) {
-        printf("Mang khong chua so chan: ");
+    if (!sochan) {
+        printf("\n Mang khong co so chan nao.");
     }
-
-    printf("\n");
-
     return 0;
 }
-
