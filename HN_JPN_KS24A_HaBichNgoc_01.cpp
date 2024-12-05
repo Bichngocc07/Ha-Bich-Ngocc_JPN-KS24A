@@ -92,13 +92,7 @@ int main() {
                 }
                 break;
             }
-                        }
-                    }
-                }
-                printf("Mang da sap xep giam dan.\n");
-                break;
-            }
-            
+            case 7:
         }
     }
 }
