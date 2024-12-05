@@ -92,62 +92,13 @@ int main() {
                 }
                 break;
             }
-            case 7: {
-                for (int i = 0; i < n - 1; i++) {
-                    for (int j = i + 1; j < n; j++) {
-                        if (array[i] < array[j]) {
-                            int temp = array[i];
-                            array[i] = array[j];
-                            array[j] = temp;
                         }
                     }
                 }
                 printf("Mang da sap xep giam dan.\n");
                 break;
             }
-            case 8: {
-                int value, found = 0;
-                printf("Nhap gia tri can tim: ");
-                scanf("%d", &value);
-                for (int i = 0; i < n; i++) {
-                    if (array[i] == value) {
-                        printf("Gia tri %d tim thay tai vi tri %d.\n", value, i + 1);
-                        found = 1;
-                        break;
-                    }
-                }
-                if (!found) printf("Khong tim thay gia tri %d trong mang.\n", value);
-                break;
-            }
-            case 9: {
-                printf("Cac so nguyen to trong mang la: ");
-                for (int i = 0; i < n; i++) {
-                    if (is_prime(array[i])) {
-                        printf("%d ", array[i]);
-                    }
-                }
-                printf("\n");
-                break;
-            }
-            case 10: {
-                for (int i = 0; i < n - 1; i++) {
-                    for (int j = i + 1; j < n; j++) {
-                        if (array[i] > array[j]) {
-                            int temp = array[i];
-                            array[i] = array[j];
-                            array[j] = temp;
-                        }
-                    }
-                }
-                printf("Mang da sap xep tang dan.\n");
-                break;
-            }
-            case 11: {
-                printf("Thoat chuong trinh.\n");
-                return 0;
-            }
-            default:
-                printf("Lua chon khong hop le. Vui long thu lai.\n");
+            
         }
     }
 }
