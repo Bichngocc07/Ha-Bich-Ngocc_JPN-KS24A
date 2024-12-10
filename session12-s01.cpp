@@ -1,22 +1,25 @@
 #include <stdio.h>
 
-double sum_two_numbers(double a, double b) {
-    return a + b;
+
+int sum(int a, int b){
+	a+b;
+	return a+b;
 }
 
 int main() {
-    double num1, num2;
+    int so1, so2, ketQua;
 
+    
     printf("Nhap so thu nhat: ");
-    scanf("%lf", &num1);
-
+    scanf("%d", &so1);
     printf("Nhap so thu hai: ");
-    scanf("%lf", &num2);
+    scanf("%d", &so2);
 
-    double result = sum_two_numbers(num1, num2);  
+    
+    ketQua = sum(so1, so2);
 
-    printf("Tong cua hai so la: %.2lf\n", result);
+    
+    printf("Tong cua %d va %d la: %d\n", so1, so2, ketQua);
 
     return 0;
 }
-
