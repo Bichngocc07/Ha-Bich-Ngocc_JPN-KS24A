@@ -1,20 +1,28 @@
 #include <stdio.h>
-
-void print_array(int arr[], int size) {
-    for (int i = 0; i < size; ++i) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
+void inmang(int arr[],int size){
+	int i;
+	for(i=0;i<size;i++){
+		printf("phan tu thu %d la %d",i,arr[i]);
+		printf("\n");
+	}
+	
 }
+int main(){
+	int i,n;
 
-int main() {
-    int arr[] = {3, 5, 7, 8, 9};
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    printf("Cac phan tu trong mang la: ");
-    print_array(arr, size);
-
+	printf("moi ban nhap vao so phan tu cua mang \n");
+	scanf("%d",&n);
+	int array[n];
+	for(i=0;i<n;i++){
+		printf("\nphan tu thu %d\n",i+1);
+		scanf("%d",&array[i]);
+		
+	}
+	inmang(array,n);
     return 0;
 }
+
+
+
 
 
