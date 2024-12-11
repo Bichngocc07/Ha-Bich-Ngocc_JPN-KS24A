@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <string>
+#include <string.h>
 
 int main() {
-    char string[100] = "Xin ch‡o!";
+    char string[100] = "Xin ch√†o!";
     int length =  sizeof(string) / sizeof(char);
     for (int i = 0; i < length; i++) {
         printf("%c", string[i]);
