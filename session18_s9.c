@@ -98,19 +98,6 @@ int main() {
                 soLuongHienTai--;
                 break;
             }
-
-            case 5:
-                for (int i = 0; i < soLuongHienTai - 1; i++) {
-                    for (int j = i + 1; j < soLuongHienTai; j++) {
-                        if (menu[i].price > menu[j].price) {
-                            struct Dish temp = menu[i];
-                            menu[i] = menu[j];
-                            menu[j] = temp;
-                        }
-                    }
-                }
-                printf("Menu da duoc sap xep theo gia.\n");
-                break;
             case 7:
                 printf("Thoat chuong trinh.\n");
                 break;
