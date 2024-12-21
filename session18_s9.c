@@ -111,26 +111,6 @@ int main() {
                 }
                 printf("Menu da duoc sap xep theo gia.\n");
                 break;
-
-            case 6: {
-                char name[100];
-                printf("Nhap ten mon an can tim: ");
-                getchar();
-                fgets(name, sizeof(name), stdin);
-                name[strcspn(name, "\n")] = 0;
-                int found = 0;
-                for (int i = 0; i < soLuongHienTai; i++) {
-                    if (strcmp(menu[i].name, name) == 0) {
-                        printf("Tim thay: Ma: %d, Ten: %s, Gia: %.2f\n", menu[i].id, menu[i].name, menu[i].price);
-                        found = 1;
-                    }
-                }
-                if (!found) {
-                    printf("Khong tim thay mon an co ten %s.\n", name);
-                }
-                break;
-            }
-
             case 7:
                 printf("Thoat chuong trinh.\n");
                 break;
