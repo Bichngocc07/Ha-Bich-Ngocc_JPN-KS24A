@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main() {
-    char inputString[1000];
     FILE *file;
+    char filename[] = "data.txt";
+    char buffer[100];
 
-    printf("Nhap mot chuoi bat ky: ");
-    fgets(inputString, sizeof(inputString), stdin);
-
-    file = fopen("bt01.txt", "w");
+    // Open the file for reading
+    file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Khong the mo file de ghi.\n");
+        printf("Could not open file %s for reading.\n", filename);
         return 1;
     }
 
-    fprintf(file, "%s", inputString);
+    // Read data from the file
+    while (fgets(buffer, sizeof(buffer), file) != NULL) {
+        printf("%s", buffer);
+    }
 
+    // Close the file
     fclose(file);
-
-    printf("Da ghi chuoi vao file bt01.txt thanh cong.\n");
 
     return 0;
 }
